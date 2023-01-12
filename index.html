@@ -5,25 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" type="text/css"  href="style/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-    crossorigin=""/>
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
 
-    <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-    crossorigin=""></script>
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
     <title>Atlas Mágico - O Seu Guia de Fantasia!</title>
 
-    <link rel="stylesheet" type="text/css"  href="style/style.css" />
-
-
 </head>
-<body>
-    <div><img src="./imgs/logo.jpg"></div>
 
-    <div id="map"></div>
+<body>
+    <!-- NAVBAR MENU -->
+    <header>
+        <nav>
+            <div class="spacing"></div>
+            <a class="logo" href="/"><img height="70px" src="./imgs/logo.png"></a>
+           
+            <div class="spacing2"></div>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="/">Início</a></li>
+                <li><a href="/">Mapas</a></li>
+                <li><a href="/">Créditos</a></li>
+                <li><a href="/">Seja um Colaborador!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <script src="./scripts/navbar.js"></script>
+    <div class="elementDiv map" id="map"></div>
+
     <script src="./scripts/script_map.js"></script>
+    <div class="elementDiv main_style"><main></main></div>
+    
 </body>
 </html>
