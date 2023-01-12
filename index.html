@@ -16,75 +16,14 @@
 
     <title>Atlas Mágico - O Seu Guia de Fantasia!</title>
 
-    <style>
-        #map {
-            height: 700px;
-            width: 80%;
-            border: solid 3px black;
-        }
-
-        body{
-        font-family: arial, helvetica, sans-serif;
-        font-size: 12px;
-        }
-
-        .menu{
-        list-style:none;
-        border:1px solid #c0c0c0;
-        float:left;
-        }
-
-        .menu li{
-        position:relative;
-        float:left;
-        border-right:1px solid #c0c0c0;
-        }
-
-        .menu li a{color:#333; text-decoration:none; padding:5px 10px; display:block;}
-
-        .menu li a:hover{
-        background:#333;
-        color:#fff;
-        -moz-box-shadow:0 3px 10px 0 #CCC;
-        -webkit-box-shadow:0 3px 10px 0 #ccc;
-        text-shadow:0px 0px 5px #fff;
-        }
-
-        .menu li  ul{
-        position:absolute;
-        top:25px;
-        left:0;
-        background-color:#fff;
-        display:none;
-        }
-
-        .menu li:hover ul, .menu li.over ul{
-            display: block;
-        }
-
-        .menu li ul li{
-            border:1px solid #c0c0c0;
-            display:block;
-            width:150px;
-        }
-
-        body {
-            background-color: #1f1c1f;
-        }
-
-        div {
-            text-align: center;
-        }
-    </style>
-
-    <link rel="stylesheet" type="text/css"  href="estilo.css" />
+    <link rel="stylesheet" type="text/css"  href="style/style.css" />
 
 
 </head>
 <body>
-    <div><img src="./logo.jpg"></div>
+    <div><img src="./imgs/logo.jpg"></div>
 
     <div id="map"></div>
-    <script src="./script.js"></script>
+    <script src="./scripts/script_map.js"></script>
 </body>
 </html>
