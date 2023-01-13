@@ -28,8 +28,33 @@ var map = L.map('map', {
   attributionControl.addAttribution('<a href="https://loremaps.azurewebsites.net/">LoreMaps</a>');
   attributionControl.addAttribution('Map data <a href="http://www.pocketplane.net/">Pocket Plane Group</a>');
   
-  // makers
+  // REGION MARCADORES
+  //#region 
+
+  // Inverno Remoto -- Neverwinter
   var neverwinterMarker = L.marker([83.03155, -158.31299]).addTo(map);
+  neverwinterMarker.bindPopup(`<h3> Inverno Remoto </h3> 
+  <p>Cidade</p>
+  `).on('click', () => {
+      map.flyTo([83.03155, -158.31299], 6);
+  }).addTo(map);
   
+  // Phandalin
+  var phandalinMarker = L.marker([82.66787727945918, -153.585859355341]).addTo(map);
+  phandalinMarker.bindPopup(`<h3> Phandalin </h3> 
+  <p>Vila</p>
+  `).on('click', () => {
+      map.flyTo([82.66787727945918, -153.585859355341], 6);
+  }).addTo(map);
+
   // markers pop-up
-  neverwinterMarker.bindPopup('Inverno Remoto').openPopup();
+  neverwinterMarker.openPopup();
+
+  //#endregion
+
+  map.on('click', function(e){
+    var coord = e.latlng;
+    var lat = coord.lat;
+    var lng = coord.lng;
+    console.log("coordenadas do clique: " + lat + ", " + lng);
+    });

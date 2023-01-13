@@ -9,14 +9,27 @@ elementDiv {
   }
 
 .map {
+    justify-content: left;
     position: absolute;
     top: 200px;
   }
 
+.map_info {
+    position: absolute;
+    height: 72vh;
+    width: 18vw;
+    background: url("budge.png") no-repeat center center;
+    background-size: cover;
+    border: solid 5px #000000;
+    top: 200px;
+    left: 1365px;
+}
+
 #map {
+    left: 200px;
     height: 700px;
-    width: 80%;
-    border: solid 5px #5f004b;
+    width: 55%;
+    border: solid 5px #000000;
 }
 
 a {
