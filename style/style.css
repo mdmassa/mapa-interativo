@@ -8,6 +8,26 @@ elementDiv {
     cursor: pointer;
   }
 
+  @font-face{
+    font-family: FeFCrm2;
+    src: url("../fonts/IM_Fell_French_Canon/FeFCrm2.ttf");
+}
+
+.homeTitle {
+    color: #FFF;
+    font-family: FeFCrm2;
+    font-size: 30pt;
+    letter-spacing: 2px;
+    line-height: 100px;
+    position: absolute;
+    height: 65vh;
+    width: 50vw;
+    top: 200px;
+    left: 250px;
+    border: 3px;
+    border-color: #FFF;
+}
+
 .map {
     justify-content: left;
     position: absolute;
@@ -16,18 +36,18 @@ elementDiv {
 
 .map_info {
     position: absolute;
-    height: 72vh;
+    height: 65vh;
     width: 18vw;
     background: url("budge.png") no-repeat center center;
     background-size: cover;
     border: solid 5px #000000;
     top: 200px;
-    left: 1365px;
+    left: 1314px;
 }
 
 #map {
-    left: 200px;
-    height: 700px;
+    left: 250px;
+    height: 65vh;
     width: 55%;
     border: solid 5px #000000;
 }
@@ -74,15 +94,16 @@ nav {
     list-style: none;
     display: flex;
     position: absolute;
-    top: 8vh;
+    top: 5vh;
     right: 0;
-    width: 15vw;
+    width: 8vw;
     height: 20vh;
     background: #ffffff;
     flex-direction: column;
-    align-items: left;
+    align-items: right;
     justify-content: space-around;
     transform: translate(100%);
+    transition: 0.3s ease-in;
 }
 
 .nav-list.active {
@@ -90,10 +111,20 @@ nav {
 }
 
 .nav-list li {
-    letter-spacing: 2px;
-    margin-left: 32px;
+    letter-spacing: 1px;
     margin-left: 0;
     opacity: 0;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .mobile-menu {
