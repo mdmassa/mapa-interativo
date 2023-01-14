@@ -1,26 +1,29 @@
-- Phandalin
+- [x] Inverno remoto
+83.03155, -158.31299
+
+- [x] Phandalin
 82.66787727945918, -153.585859355341
 
-- Porto Llast
+- [x] Porto Llast
 83.21049936471866, -159.62942352832476
 
-- Luskan
+- [x] Luskan
 83.7107320137689, -161.9377135462538
 
-- Mirabar
+- [ ] Mirabar
 84.3995116971245, -152.3528140432342
 
-- Sela Longa
+- [ ] Sela Longa
 83.55478564554016, -150.8579214601944
 
-- Triboar
+- [ ] Triboar
 82.7681391822544, -147.12069000259504
 
-- Lariço Vermelho
+- [ ] Lariço Vermelho
 82.40823147725087, -146.94482028694327
 
-- Águas Profundas
+- [ ] Águas Profundas
 81.65330835588037, -149.472947449437
 
-- Pedra Noturna
+- [ ] Pedra Noturna
 81.39093994309583, -145.88960199303287
