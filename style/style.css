@@ -24,8 +24,32 @@ elementDiv {
     width: 50vw;
     top: 200px;
     left: 250px;
-    border: 3px;
-    border-color: #FFF;
+}
+
+.homeDesc {
+    color: #FFF;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15pt;
+    line-height: normal;
+    position: absolute;
+    height: 30vh;
+    width: 35vw;
+    top: 500px;
+    left: 250px;
+}
+
+.homeImg {
+    position: absolute;
+    height: 65vh;
+    width: 30vw;
+    top: 180px;
+    left: 1100px;
+    transition: 0.3s;
+}
+
+.homeImg:hover {
+    transition: 0.3s;
+    top: 160px;
 }
 
 .map {
@@ -66,6 +90,30 @@ body {
     margin: auto;
     overflow-x: hidden;
 }
+
+button {
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn1 {
+    background: #f0bb0b; 
+    color: #000;
+  }
+  
+.btn1:hover {
+    background-color: #f3d161;
+    color: #000;
+  }
 
 main {
     background: url("bg.png") no-repeat center center;
@@ -136,4 +184,17 @@ nav {
     height: 2px;
     background: #3d333c;
     margin: 8px;
+    transition: 0.3s;
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
 }
