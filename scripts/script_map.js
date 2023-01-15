@@ -64,7 +64,7 @@ var map = L.map('map', {
   <p class="locDesc">Vila</p>
   `).on('click', () => {
       map.flyTo([82.66787727945918, -153.585859355341], 6);
-  
+      document.getElementById("mapInfo").innerHTML = "<h1>Phandalin</h1> <p>Phandalin é uma pequena vila perto de Triboar</p>";
   }).addTo(map);
 
   // Porto Llast
