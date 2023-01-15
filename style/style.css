@@ -49,6 +49,7 @@
   }
 
 .mapInfo {
+    font-size: 12pt;
     font-family: FeFCrm2;
     color: #000;
     position: absolute;
@@ -70,6 +71,21 @@
     border: solid 5px #000000;
     top: 200px;
     left: 1314px;
+}
+
+.mapSelect {
+    font-family: FeFCrm2;
+    color: #FFF;
+    position: absolute;
+    height: 22vh;
+    width: 15.3vw;
+    top: 300px;
+    left: 200px;
+    transition: 0.3s;
+}
+
+.mapSelect:hover {
+    top: 290px;
 }
 
 .locDesc {
@@ -100,34 +116,37 @@ body {
 
 button {
     border: none;
-    color: rgb(0, 0, 0);
+    color: #000000;
     padding: 25px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-family: FeFCrm2;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
 }
 
-p {
-    font-family: FeFCrm2;
-    font-size: 14pt;
-    line-height: 25px;
-    text-align: justify;
-}
-
 .btn1 {
     background: #f0bb0b; 
-    color: #000;
+    color: #473700;
+    transition: 0.3s;
+    position: absolute;
+    top: 690px;
+    left: 250px;
     transition: 0.3s;
   }
   
 .btn1:hover {
+    top: 675px;
     background-color: #f3d161;
-    color: #000;
+    color: #977400;
   }
+
+p {
+    font-family: FeFCrm2;
+    line-height: 25px;
+    text-align: justify;
+}
 
 main {
     background: url("bg.png") no-repeat center center;
@@ -156,6 +175,7 @@ nav {
     list-style: none;
     display: flex;
     position: absolute;
+    z-index: 2;
     top: 5vh;
     right: 0;
     width: 8vw;
