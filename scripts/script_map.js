@@ -50,13 +50,11 @@ var map = L.map('map', {
   `).on('click', () => {
       map.flyTo([83.03155, -158.31299], 6);
       // add information from .txt
-      fetch(info)
-        .then(response => response.text())
-        .then(data => {
+      fetch('./web/all_maps/dnd/forgotten_realms/continents/faerun/locations/inverno_remoto.txt')
+         .then(response => response.text())
+         .then(data => {
           document.getElementById("mapInfo").innerHTML = data;
       })
-
-  .catch(error => console.error(error));
   
   }).addTo(map);
   

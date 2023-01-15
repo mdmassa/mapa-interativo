@@ -109,7 +109,6 @@ button {
     font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
-    transition: 0.5s;
 }
 
 p {
@@ -122,6 +121,7 @@ p {
 .btn1 {
     background: #f0bb0b; 
     color: #000;
+    transition: 0.3s;
   }
   
 .btn1:hover {
