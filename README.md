@@ -1,9 +1,9 @@
 # Mapa Interativo de Toril
 
-Mapa de interativo do planela Toril de Forgotten Realms, um cenário do RPG Dungeons & Dragons.
+Este repositório contém um site com mapas interativos de jogos de fantasia e literatura, como por exemplo os continentes do planela Toril de Forgotten Realms, um cenário do RPG Dungeons & Dragons.
 
 ## 🧭 Continentes a serem adicionados
-- [ ] Faerun
+- [x] Faerun
 - [ ] Kara-Tur
 - [ ] Maztica
 - [ ] Zakhara
