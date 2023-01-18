@@ -1,69 +1,72 @@
-<h1>
-Cidade em português (Inglês)
-</h1>
+<div class="container">
 
-<p>
-<i>"Quote"</i>
-</p>
+    <h1>
+    Cidade em português (Inglês)
+    </h1>
 
-<img src=""/>
-<h5>
-Legenda e link para abrir mapa da cidade
-</h5>
-<br />
+    <p>
+    <i>"Quote"</i>
+    </p>
 
-
-<h2>
-Estatísticas e informações
-</h2>
-<li>
-  <b>População:</b> 0000 habitantes
-</li>
-
-<li>
-  <b>Moeda Padrão:</b>
-</li>
-
-<li>
-  <b>Línguas nativas:</b> Comum etc.
-</li>
-
-<li>
-  <b>Deuses cultuados:</b> Divindades
-</li>
-<br />
+    <img src=""/>
+    <h5>
+    Legenda e link para abrir mapa da cidade
+    </h5>
+    <br />
 
 
-<h2>
-  Geografia local
-</h2>
-<p>
-  Descrição da geografia local
-</p>
-<br />
+    <h2>
+    Estatísticas e informações
+    </h2>
+    <li>
+      <b>População:</b> 0000 habitantes
+    </li>
+
+    <li>
+      <b>Moeda Padrão:</b>
+    </li>
+
+    <li>
+      <b>Línguas nativas:</b> Comum etc.
+    </li>
+
+    <li>
+      <b>Deuses cultuados:</b> Divindades
+    </li>
+    <br />
 
 
-<h2>
-  Legislação vigente
-</h2>
-<p>
-  Descrição
-</p>
-<br />
+    <h2>
+      Geografia local
+    </h2>
+    <p>
+      Descrição da geografia local
+    </p>
+    <br />
 
 
-<h2>
-  Governantes
-</h2>
-<li>
-  Nome (ano)
-</li>
-<br />
+    <h2>
+      Legislação vigente
+    </h2>
+    <p>
+      Descrição
+    </p>
+    <br />
 
 
-<h2>
-  História
-</h2>
-<p>
-Exemplo de texto sobre a história da localização cidade etc
-</p>
+    <h2>
+      Governantes
+    </h2>
+    <li>
+      Nome (ano)
+    </li>
+    <br />
+
+
+    <h2>
+      História
+    </h2>
+    <p>
+    Exemplo de texto sobre a história da localização cidade etc
+    </p>
+</div>

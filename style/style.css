@@ -48,34 +48,42 @@
     top: 200px;
   }
 
+.container {
+    height: 60vh;
+    width: 24vw;
+    top: 220px;
+    left: 1150px;
+    
+}
+
 .mapInfo {
     font-size: 12pt;
     font-family: FeFCrm2;
     color: #000;
     position: absolute;
     height: 60vh;
-    width: 24vw;
+    width: 26vw;
     top: 220px;
     left: 1150px;
-    z-index: 1;
+    z-index: 2;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
 
 .mapInfo::-webkit-scrollbar {
-    width: 0px;
+    width: 10px;
     scroll-behavior: smooth;
   }
   
 .mapInfo::-webkit-scrollbar-track {
-    background: #dbdbdb;      
+    background: #fff4df;      
   }
   
 .mapInfo::-webkit-scrollbar-thumb {
-    background-color: #7c7c7c; 
+    background-color: #815017; 
     border-radius: 20px; 
-    border: 3px solid #dbdbdb;
+    border: 3px solid #815017;
   }
 
 .mapInfoArea {
@@ -83,8 +91,20 @@
     height: 65vh;
     width: 29vw;
     background: url("budge.png") no-repeat center center;
+    opacity: 0.6;
     background-size: cover;
     border: solid 5px #000000;
+    top: 200px;
+    left: 1100px;
+    z-index: 1;
+}
+
+.mapInfoAreaBack {
+    position: absolute;
+    height: 65vh;
+    width: 29vw;
+    background: #FFF;
+    border: solid 5px #000;
     top: 200px;
     left: 1100px;
 }
@@ -259,4 +279,8 @@ h1 {
 
 h2 {
     line-height: 25px;
+}
+
+h5 {
+    line-height: 20px;
 }
