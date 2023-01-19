@@ -1,13 +1,13 @@
 - [x] Inverno remoto
 83.03155, -158.31299
 
-- [x] Phandalin
+- [ ] Phandalin
 82.66787727945918, -153.585859355341
 
-- [x] Porto Llast
+- [ ] Porto Llast
 83.21049936471866, -159.62942352832476
 
-- [x] Luskan
+- [ ] Luskan
 83.7107320137689, -161.9377135462538
 
 - [ ] Mirabar
