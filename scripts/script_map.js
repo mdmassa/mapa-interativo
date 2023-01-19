@@ -63,7 +63,14 @@ var map = L.map('map', {
   <p class="locDesc">Vila</p>
   `).on('click', () => {
       map.flyTo([82.66787727945918, -153.585859355341], 6);
-      document.getElementById("mapInfo").innerHTML = "<h1>Phandalin</h1> <p>Phandalin é uma pequena vila perto de Triboar</p>";
+      
+      // add information from .txt
+      fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/phandalin/phandalin.html")
+         .then(response => response.text())
+         .then(data => {
+          document.getElementById("mapInfo").innerHTML = data;
+      })
+
   }).addTo(map);
 
   // Porto Llast
