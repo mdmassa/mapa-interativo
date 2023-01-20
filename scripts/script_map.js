@@ -78,6 +78,14 @@ var map = L.map('map', {
   portoLLastMarker.bindPopup(`<h3>Porto Llast</h3>
   <p class="locDesc">Pequena Cidade</p>`).on('click', () => {
     map.flyTo([83.21049936471866, -159.62942352832476], 6);
+
+    // add information from .txt
+    fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/porto_llast/porto_llast.html")
+    .then(response => response.text())
+    .then(data => {
+     document.getElementById("mapInfo").innerHTML = data;
+ })
+
 }).addTo(map);
 
   // Luskan
@@ -85,6 +93,14 @@ var map = L.map('map', {
   luskanMarker.bindPopup(`<h3>Luskan</h3>
   <p class="locDesc">Cidade</p>`).on('click', () => {
     map.flyTo([83.7107320137689, -161.9377135462538], 6);
+
+    // add information from .txt
+    fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/luskan/luskan.html")
+    .then(response => response.text())
+    .then(data => {
+     document.getElementById("mapInfo").innerHTML = data;
+ })
+
 }).addTo(map);
 
   // markers pop-up
