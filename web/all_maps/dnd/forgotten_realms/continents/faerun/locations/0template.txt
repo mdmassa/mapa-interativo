@@ -30,7 +30,7 @@
     </li>
 
     <li>
-      <b>Línguas nativas:</b> Comum etc.
+      <b>Raças:</b> Comum etc.
     </li>
 
     <li>
@@ -47,22 +47,21 @@
     </p>
     <br />
 
-
-    <h2>
-      Legislação vigente
-    </h2>
-    <p>
-      Descrição
-    </p>
-    <br />
-
-
     <h2>
       Governantes
     </h2>
     <li>
       Nome (ano)
     </li>
+    <br />
+
+
+    <h2>
+      Comércio
+    </h2>
+    <p>
+      Descrição
+    </p>
     <br />
 
 
