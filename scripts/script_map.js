@@ -26,7 +26,7 @@ var map = L.map('map', {
   // attributions
   var attributionControl = map.attributionControl;
   attributionControl.addAttribution('<a href="https://loremaps.azurewebsites.net/">LoreMaps</a>');
-  attributionControl.addAttribution('Map data <a href="http://www.pocketplane.net/">Pocket Plane Group</a>');
+  attributionControl.addAttribution('Arquivo de mapa <a href="http://www.pocketplane.net/">Pocket Plane Group</a>');
   
   // REGION MARCADORES
   //#region 
@@ -48,13 +48,15 @@ var map = L.map('map', {
   <p class="locDesc">Cidade</p>
   `).on('click', () => {
       map.flyTo([83.03155, -158.31299], 6);
+
       // add information from .txt
       fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/inverno_remoto/inverno_remoto.html")
          .then(response => response.text())
          .then(data => {
           document.getElementById("mapInfo").innerHTML = data;
+          document.querySelector('#mapInfo').scrollTop = 0;
       })
-  
+
   }).addTo(map);
   
   // Phandalin
@@ -63,12 +65,13 @@ var map = L.map('map', {
   <p class="locDesc">Vila</p>
   `).on('click', () => {
       map.flyTo([82.66787727945918, -153.585859355341], 6);
-      
+
       // add information from .txt
       fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/phandalin/phandalin.html")
          .then(response => response.text())
          .then(data => {
           document.getElementById("mapInfo").innerHTML = data;
+          document.querySelector('#mapInfo').scrollTop = 0;
       })
 
   }).addTo(map);
@@ -84,6 +87,7 @@ var map = L.map('map', {
     .then(response => response.text())
     .then(data => {
      document.getElementById("mapInfo").innerHTML = data;
+     document.querySelector('#mapInfo').scrollTop = 0;
  })
 
 }).addTo(map);
@@ -99,6 +103,7 @@ var map = L.map('map', {
     .then(response => response.text())
     .then(data => {
      document.getElementById("mapInfo").innerHTML = data;
+     document.querySelector('#mapInfo').scrollTop = 0;
  })
 
 }).addTo(map);
