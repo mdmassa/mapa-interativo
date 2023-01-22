@@ -8,7 +8,7 @@
     <i>"Quote"</i>
     </p>
 
-    <center><img src=""/></center>
+    <center><img width="450px" src=""/></center>
     <h5>
     Legenda.
 
