@@ -112,13 +112,14 @@ var map = L.map('map', {
 //#endregion
 
   //#region Mirabar
+
   var mirabarMarker = L.marker([84.3995116971245, -152.3528140432342]).addTo(map);
-  nomeMarker.bindPopup(`<h3>Mirabar</h3>
+  mirabarMarker.bindPopup(`<h3>Mirabar</h3>
   <p class="locDesc">Cidade</p>`).on('click', () => {
     map.flyTo([84.3995116971245, -152.3528140432342], 6);
 
     // add information from .txt
-      fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/locdir/locfile.html")
+      fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/mirabar/mirabar.html")
          .then(response => response.text())
          .then(data => {
           document.getElementById("mapInfo").innerHTML = data;
@@ -126,16 +127,17 @@ var map = L.map('map', {
       })
 
   }).addTo(map);
+
   //#endregion
 
   //#region Sela Longa
-  var nomeMarker = L.marker([83.55478564554016, -150.8579214601944]).addTo(map);
-  nomeMarker.bindPopup(`<h3>Sela Longa</h3>
+  var longsaddleMarker = L.marker([83.55478564554016, -150.8579214601944]).addTo(map);
+  longsaddleMarker.bindPopup(`<h3>Sela Longa</h3>
   <p class="locDesc">Cidade</p>`).on('click', () => {
     map.flyTo([83.55478564554016, -150.8579214601944], 6);
 
     // add information from .txt
-      fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/locdir/locfile.html")
+      fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/sela_longa/sela_longa.html")
          .then(response => response.text())
          .then(data => {
           document.getElementById("mapInfo").innerHTML = data;
@@ -144,7 +146,6 @@ var map = L.map('map', {
 
   }).addTo(map);
   //#endregion
-
 
   // markers pop-up
   neverwinterMarker.openPopup();
