@@ -1,14 +1,3 @@
-/*
-// earth map
-
-var map = L.map('map').setView([51.505, -0.09], 13);
-
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(map);
-*/
-
 // create Leaflet map
 var map = L.map('map', {
     minZoom: 4,
@@ -16,7 +5,7 @@ var map = L.map('map', {
   });
   
   // image generated with gdal2tiles --leaflet ...
-  L.tileLayer('https://loremaps.github.io/LoreMaps-Faerun-Tiles/Lang/pb/{z}/{x}/{y}.png', {
+  L.tileLayer('http://localhost:5500/tiles/faerun/{z}/{x}/{y}.png', {
     noWrap: true
   }).addTo(map);
   
