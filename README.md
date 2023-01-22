@@ -7,3 +7,8 @@ Este repositório contém um site com mapas interativos de jogos de fantasia e l
 - [ ] Kara-Tur
 - [ ] Maztica
 - [ ] Zakhara
+
+## Outras features
+
+- [ ] Envio de edições sobre as localidades.
+- [ ] Adição de milestones de sua própria campanha.
