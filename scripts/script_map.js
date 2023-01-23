@@ -201,11 +201,11 @@ var map = L.map('map', {
   //#region Pedra Noturna
   var nightstoneMarker = L.marker([81.39093994309583, -145.88960199303287]).addTo(map);
   nightstoneMarker.bindPopup(`<h3>Pedra Noturna</h3>
-  <p class="locDesc">Cosmópole</p>`).on('click', () => {
+  <p class="locDesc">Fortificação</p>`).on('click', () => {
     map.flyTo([81.39093994309583, -145.88960199303287], 6);
   
     // add information from .txt
-        fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/aguas_profundas/aguas_profundas.html")
+        fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/pedra_noturna/pedra_noturna.html")
         .then(response => response.text())
           .then(data => {
             document.getElementById("mapInfo").innerHTML = data;
@@ -222,7 +222,7 @@ var map = L.map('map', {
     map.flyTo([83.06605550417774, -144.40201887902353], 6);
   
     // add information from .txt
-        fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/aguas_profundas/aguas_profundas.html")
+        fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/yartar/yartar.html")
         .then(response => response.text())
           .then(data => {
             document.getElementById("mapInfo").innerHTML = data;
