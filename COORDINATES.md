@@ -49,7 +49,7 @@
 - [ ] Rassalantar
 81.9447678293486, -148.9322930015691
 
-- [ ] Ninho dos Grifos
+- [ ] Ninho dos Grifos (Griffon's Nest)
 83.99307175845784, -146.9304613852458
 
 - [ ] Bryn Shander
