@@ -40,7 +40,7 @@
 - [ ] Montículo de Morgur ()
 83.83230658946417, -155.37655529152707
 
-- [ ] Fortaleza de Helm ()
+- [ ] Fortaleza de Helm (Helm's Hold)
 82.97534666724411, -157.2255954120512
 
 - [ ] Amphail

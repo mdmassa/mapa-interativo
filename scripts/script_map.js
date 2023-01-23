@@ -232,7 +232,56 @@ var map = L.map('map', {
     }).addTo(map);
   //#endregion
 
+  //#region Fortaleza de Helm
+  var helmsholdMarker = L.marker([82.97534666724411, -157.2255954120512]).addTo(map);
+  helmsholdMarker.bindPopup(`<h3>Fortaleza de Helm</h3>
+  <p class="locDesc">Cidade-Fortaleza Pequena</p>`).on('click', () => {
+    map.flyTo([82.97534666724411, -157.2255954120512], 6);
+  
+    // add information from .txt
+        fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/fortaleza_de_helm/fortaleza_de_helm.html")
+        .then(response => response.text())
+          .then(data => {
+            document.getElementById("mapInfo").innerHTML = data;
+            document.querySelector('#mapInfo').scrollTop = 0;
+        })
+  
+    }).addTo(map);
+  //#endregion
 
+  //#region Amphail
+  var amphailMarker = L.marker([82.08819592233121, -148.64631705638004]).addTo(map);
+  amphailMarker.bindPopup(`<h3>Amphail</h3>
+  <p class="locDesc">Vila</p>`).on('click', () => {
+    map.flyTo([82.08819592233121, -148.64631705638004], 6);
+  
+    // add information from .txt
+        fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/amphail/amphail.html")
+        .then(response => response.text())
+          .then(data => {
+            document.getElementById("mapInfo").innerHTML = data;
+            document.querySelector('#mapInfo').scrollTop = 0;
+        })
+  
+    }).addTo(map);
+  //#endregion
+
+  //#region Rassalantar
+  var rassalantarMarker = L.marker([81.9447678293486, -148.9322930015691]).addTo(map);
+  rassalantarMarker.bindPopup(`<h3>Rassalantar</h3>
+  <p class="locDesc">Aldeia</p>`).on('click', () => {
+    map.flyTo([81.9447678293486, -148.9322930015691], 6);
+  
+    // add information from .txt
+        fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/rassalantar/rassalantar.html")
+        .then(response => response.text())
+          .then(data => {
+            document.getElementById("mapInfo").innerHTML = data;
+            document.querySelector('#mapInfo').scrollTop = 0;
+        })
+  
+    }).addTo(map);
+  //#endregion
 
   // markers pop-up
   neverwinterMarker.openPopup();
