@@ -58,10 +58,10 @@
 - [ ] Pedra Hundel (Hundelstone)
 84.25178795002259, -168.30748766940889
 
-- [ ] Cisalha de Fogo ()
+- [ ] Cisalha de Fogo (Fireshear)
 83.85116353882519, -169.89135444276357
 
-- [ ] Mestre de Ferro ()
+- [ ] Mestre de Ferro (Ironmaster)
 84.44010682117988, -170.0233433405431
 
 - [ ] Svardborg
