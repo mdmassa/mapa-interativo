@@ -318,6 +318,23 @@ var map = L.map('map', {
     }).addTo(map);
   //#endregion
 
+    //#region Pedra Hundel
+  var hundelstoneMarker = L.marker([84.25178795002259, -168.30748766940889]).addTo(map);
+  hundelstoneMarker.bindPopup(`<h3>Pedra Hundel</h3>
+  <p class="locDesc">Cidade Pequena</p>`).on('click', () => {
+    map.flyTo([84.25178795002259, -168.30748766940889], 6);
+  
+    // add information from .txt
+        fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/pedra_hundel/pedra_hundel.html")
+        .then(response => response.text())
+          .then(data => {
+            document.getElementById("mapInfo").innerHTML = data;
+            document.querySelector('#mapInfo').scrollTop = 0;
+        })
+  
+    }).addTo(map);
+    //#endregion
+
 //#endregion
 
   // markers pop-up
