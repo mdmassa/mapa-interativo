@@ -335,6 +335,74 @@ var map = L.map('map', {
     }).addTo(map);
     //#endregion
 
+    //#region Cisalha de Fogo
+    var fireshearMarker = L.marker([83.85116353882519, -169.89135444276357]).addTo(map);
+    fireshearMarker.bindPopup(`<h3>Cisalha de Fogo</h3>
+    <p class="locDesc">Cidade Grande</p>`).on('click', () => {
+      map.flyTo([83.85116353882519, -169.89135444276357], 6);
+    
+      // add information from .txt
+          fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/cisalha_de_fogo/cisalha_de_fogo.html")
+          .then(response => response.text())
+            .then(data => {
+              document.getElementById("mapInfo").innerHTML = data;
+              document.querySelector('#mapInfo').scrollTop = 0;
+          })
+    
+      }).addTo(map);
+    //#endregion
+
+    //#region Mestre de Ferro
+    var ironmasterMarker = L.marker([84.44010682117988, -170.0233433405431]).addTo(map);
+    ironmasterMarker.bindPopup(`<h3>Mestre de Ferro</h3>
+    <p class="locDesc">Cidade Pequena</p>`).on('click', () => {
+      map.flyTo([84.44010682117988, -170.0233433405431], 6);
+
+      // add information from .txt
+          fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/mestre_de_ferro/mestre_de_ferro.html")
+          .then(response => response.text())
+            .then(data => {
+              document.getElementById("mapInfo").innerHTML = data;
+              document.querySelector('#mapInfo').scrollTop = 0;
+          })
+
+      }).addTo(map);
+    //#endregion
+
+    //#region Svardborg
+    var svardborgMarker = L.marker([84.78253072828504, -173.0590879894729]).addTo(map);
+    svardborgMarker.bindPopup(`<h3>Svardborg</h3>
+    <p class="locDesc">Fortaleza</p>`).on('click', () => {
+      map.flyTo([84.78253072828504, -173.0590879894729], 6);
+
+      // add information from .txt
+          fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/svardborg/svardborg.html")
+          .then(response => response.text())
+            .then(data => {
+              document.getElementById("mapInfo").innerHTML = data;
+              document.querySelector('#mapInfo').scrollTop = 0;
+          })
+
+      }).addTo(map);
+    //#endregion
+
+    //#region Aurilssbarg
+    var aurilssbargMarker = L.marker([83.89571893465583, -175.89684929173336]).addTo(map);
+    aurilssbargMarker.bindPopup(`<h3>Aurilssbarg</h3>
+    <p class="locDesc">Cidade Pequena</p>`).on('click', () => {
+      map.flyTo([83.89571893465583, -175.89684929173336], 6);
+
+      // add information from .txt
+          fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/aurilssbarg/aurilssbarg.html")
+          .then(response => response.text())
+            .then(data => {
+              document.getElementById("mapInfo").innerHTML = data;
+              document.querySelector('#mapInfo').scrollTop = 0;
+          })
+
+      }).addTo(map);
+    //#endregion
+
 //#endregion
 
   // markers pop-up
