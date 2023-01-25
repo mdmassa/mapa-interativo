@@ -55,7 +55,7 @@
 - [ ] Bryn Shander
 84.4209142464696, -165.93668421184242
 
-- [ ] Pedra Hundel ()
+- [ ] Pedra Hundel (Hundelstone)
 84.25178795002259, -168.30748766940889
 
 - [ ] Cisalha de Fogo ()
