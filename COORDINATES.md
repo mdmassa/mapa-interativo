@@ -13,7 +13,7 @@
 - [x] Mirabar
 84.3995116971245, -152.3528140432342
 
-- [ ] Sela Longa (Longsaddle)
+- [x] Sela Longa (Longsaddle)
 83.55478564554016, -150.8579214601944
 
 - [ ] Triboar
