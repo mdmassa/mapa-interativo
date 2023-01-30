@@ -16,7 +16,7 @@
 - [x] Sela Longa (Longsaddle)
 83.55478564554016, -150.8579214601944
 
-- [ ] Triboar
+- [x] Triboar
 82.7681391822544, -147.12069000259504
 
 - [ ] Lariço Vermelho (red larch)
