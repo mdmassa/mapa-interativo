@@ -19,10 +19,10 @@
 - [x] Triboar
 82.7681391822544, -147.12069000259504
 
-- [ ] Lariço Vermelho (red larch)
+- [x] Lariço Vermelho (red larch)
 82.40823147725087, -146.94482028694327
 
-- [ ] Águas Profundas (waterdeep)
+- [x] Águas Profundas (waterdeep)
 81.65330835588037, -149.472947449437
 
 - [ ] Pedra Noturna (nightstone)
