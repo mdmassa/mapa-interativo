@@ -5,7 +5,7 @@ var map = L.map('map', {
   });
   
   // image generated with gdal2tiles --leaflet ...
-  L.tileLayer('http://localhost:5500/tiles/faerun/{z}/{x}/{y}.png', {
+  L.tileLayer('http://localhost:5501/tiles/faerun/{z}/{x}/{y}.png', {
     noWrap: true
   }).addTo(map);
   
@@ -28,7 +28,7 @@ var map = L.map('map', {
     map.flyTo([coordenada], 6);
 
     // add information from .txt
-      fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/locdir/locfile.html")
+      fetch("http://localhost:5501/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/locdir/locfile.html")
          .then(response => response.text())
          .then(data => {
           document.getElementById("mapInfo").innerHTML = data;
@@ -49,7 +49,7 @@ var map = L.map('map', {
         map.flyTo([83.03155, -158.31299], 6);
 
         // add information from .txt
-        fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/inverno_remoto/inverno_remoto.html")
+        fetch("http://localhost:5501/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/inverno_remoto/inverno_remoto.html")
           .then(response => response.text())
           .then(data => {
             document.getElementById("mapInfo").innerHTML = data;
@@ -68,7 +68,7 @@ var map = L.map('map', {
         map.flyTo([82.66787727945918, -153.585859355341], 6);
 
         // add information from .txt
-        fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/phandalin/phandalin.html")
+        fetch("http://localhost:5501/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/phandalin/phandalin.html")
           .then(response => response.text())
           .then(data => {
             document.getElementById("mapInfo").innerHTML = data;
@@ -85,7 +85,7 @@ var map = L.map('map', {
       map.flyTo([83.21049936471866, -159.62942352832476], 6);
 
       // add information from .txt
-      fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/porto_llast/porto_llast.html")
+      fetch("http://localhost:5501/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/porto_llast/porto_llast.html")
       .then(response => response.text())
       .then(data => {
       document.getElementById("mapInfo").innerHTML = data;
@@ -102,7 +102,7 @@ var map = L.map('map', {
       map.flyTo([83.7107320137689, -161.9377135462538], 6);
 
       // add information from .txt
-      fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/luskan/luskan.html")
+      fetch("http://localhost:5501/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/luskan/luskan.html")
       .then(response => response.text())
       .then(data => {
       document.getElementById("mapInfo").innerHTML = data;
@@ -120,7 +120,7 @@ var map = L.map('map', {
       map.flyTo([84.3995116971245, -152.3528140432342], 6);
 
       // add information from .txt
-        fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/mirabar/mirabar.html")
+        fetch("http://localhost:5501/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/mirabar/mirabar.html")
           .then(response => response.text())
           .then(data => {
             document.getElementById("mapInfo").innerHTML = data;
@@ -138,7 +138,7 @@ var map = L.map('map', {
       map.flyTo([83.55478564554016, -150.8579214601944], 6);
 
       // add information from .txt
-        fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/sela_longa/sela_longa.html")
+        fetch("http://localhost:5501/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/sela_longa/sela_longa.html")
           .then(response => response.text())
           .then(data => {
             document.getElementById("mapInfo").innerHTML = data;
@@ -155,7 +155,7 @@ var map = L.map('map', {
       map.flyTo([82.7681391822544, -147.12069000259504], 6);
     
       // add information from .txt
-          fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/triboar/triboar.html")
+          fetch("http://localhost:5501/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/triboar/triboar.html")
           .then(response => response.text())
             .then(data => {
               document.getElementById("mapInfo").innerHTML = data;
@@ -172,7 +172,7 @@ var map = L.map('map', {
       map.flyTo([82.40823147725087, -146.94482028694327], 6);
     
       // add information from .txt
-          fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/larico_vermelho/larico_vermelho.html")
+          fetch("http://localhost:5501/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/larico_vermelho/larico_vermelho.html")
           .then(response => response.text())
             .then(data => {
               document.getElementById("mapInfo").innerHTML = data;
@@ -189,7 +189,7 @@ var map = L.map('map', {
       map.flyTo([81.65330835588037, -149.472947449437], 6);
     
       // add information from .txt
-          fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/aguas_profundas/aguas_profundas.html")
+          fetch("http://localhost:5501/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/aguas_profundas/aguas_profundas.html")
           .then(response => response.text())
             .then(data => {
               document.getElementById("mapInfo").innerHTML = data;
@@ -206,7 +206,7 @@ var map = L.map('map', {
       map.flyTo([81.39093994309583, -145.88960199303287], 6);
     
       // add information from .txt
-          fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/pedra_noturna/pedra_noturna.html")
+          fetch("http://localhost:5501/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/pedra_noturna/pedra_noturna.html")
           .then(response => response.text())
             .then(data => {
               document.getElementById("mapInfo").innerHTML = data;
@@ -223,7 +223,7 @@ var map = L.map('map', {
       map.flyTo([83.06605550417774, -144.40201887902353], 6);
     
       // add information from .txt
-          fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/yartar/yartar.html")
+          fetch("http://localhost:5501/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/yartar/yartar.html")
           .then(response => response.text())
             .then(data => {
               document.getElementById("mapInfo").innerHTML = data;
@@ -240,7 +240,7 @@ var map = L.map('map', {
       map.flyTo([82.97534666724411, -157.2255954120512], 6);
     
       // add information from .txt
-          fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/fortaleza_de_helm/fortaleza_de_helm.html")
+          fetch("http://localhost:5501/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/fortaleza_de_helm/fortaleza_de_helm.html")
           .then(response => response.text())
             .then(data => {
               document.getElementById("mapInfo").innerHTML = data;
@@ -257,7 +257,7 @@ var map = L.map('map', {
       map.flyTo([82.08819592233121, -148.64631705638004], 6);
     
       // add information from .txt
-          fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/amphail/amphail.html")
+          fetch("http://localhost:5501/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/amphail/amphail.html")
           .then(response => response.text())
             .then(data => {
               document.getElementById("mapInfo").innerHTML = data;
@@ -274,7 +274,7 @@ var map = L.map('map', {
       map.flyTo([81.9447678293486, -148.9322930015691], 6);
     
       // add information from .txt
-          fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/rassalantar/rassalantar.html")
+          fetch("http://localhost:5501/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/rassalantar/rassalantar.html")
           .then(response => response.text())
             .then(data => {
               document.getElementById("mapInfo").innerHTML = data;
@@ -291,7 +291,7 @@ var map = L.map('map', {
       map.flyTo([83.99307175845784, -146.9304613852458], 6);
     
       // add information from .txt
-          fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/ninho_dos_grifos/ninho_dos_grifos.html")
+          fetch("http://localhost:5501/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/ninho_dos_grifos/ninho_dos_grifos.html")
           .then(response => response.text())
             .then(data => {
               document.getElementById("mapInfo").innerHTML = data;
@@ -308,7 +308,7 @@ var map = L.map('map', {
     map.flyTo([84.4209142464696, -165.93668421184242], 6);
   
     // add information from .txt
-        fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/bryn_shander/bryn_shander.html")
+        fetch("http://localhost:5501/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/bryn_shander/bryn_shander.html")
         .then(response => response.text())
           .then(data => {
             document.getElementById("mapInfo").innerHTML = data;
@@ -325,7 +325,7 @@ var map = L.map('map', {
     map.flyTo([84.25178795002259, -168.30748766940889], 6);
   
     // add information from .txt
-        fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/pedra_hundel/pedra_hundel.html")
+        fetch("http://localhost:5501/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/pedra_hundel/pedra_hundel.html")
         .then(response => response.text())
           .then(data => {
             document.getElementById("mapInfo").innerHTML = data;
@@ -342,7 +342,7 @@ var map = L.map('map', {
       map.flyTo([83.85116353882519, -169.89135444276357], 6);
     
       // add information from .txt
-          fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/cisalha_de_fogo/cisalha_de_fogo.html")
+          fetch("http://localhost:5501/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/cisalha_de_fogo/cisalha_de_fogo.html")
           .then(response => response.text())
             .then(data => {
               document.getElementById("mapInfo").innerHTML = data;
@@ -359,7 +359,7 @@ var map = L.map('map', {
       map.flyTo([84.44010682117988, -170.0233433405431], 6);
 
       // add information from .txt
-          fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/mestre_de_ferro/mestre_de_ferro.html")
+          fetch("http://localhost:5501/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/mestre_de_ferro/mestre_de_ferro.html")
           .then(response => response.text())
             .then(data => {
               document.getElementById("mapInfo").innerHTML = data;
@@ -376,7 +376,7 @@ var map = L.map('map', {
       map.flyTo([84.78253072828504, -173.0590879894729], 6);
 
       // add information from .txt
-          fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/svardborg/svardborg.html")
+          fetch("http://localhost:5501/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/svardborg/svardborg.html")
           .then(response => response.text())
             .then(data => {
               document.getElementById("mapInfo").innerHTML = data;
@@ -393,7 +393,7 @@ var map = L.map('map', {
       map.flyTo([83.89571893465583, -175.89684929173336], 6);
 
       // add information from .txt
-          fetch("http://localhost:5500/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/aurilssbarg/aurilssbarg.html")
+          fetch("http://localhost:5501/web/all_maps/dnd/forgotten_realms/continents/faerun/locations/aurilssbarg/aurilssbarg.html")
           .then(response => response.text())
             .then(data => {
               document.getElementById("mapInfo").innerHTML = data;

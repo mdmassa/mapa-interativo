@@ -151,6 +151,7 @@ body {
 }
 
 button {
+    border-radius: 10px;
     border: none;
     color: #000000;
     padding: 25px 32px;
